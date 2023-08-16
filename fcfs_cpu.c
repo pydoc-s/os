@@ -1,9 +1,10 @@
 #include <stdio.h>
-int p[30], bt[30], n, wt[30], tot_wt = 0, tat[30], tot_tat = 0, FCFS_wt = 0, FCFS_tat = 0;
+int p[30], bt[30], tot_tat = 0, wt[30], n, tot_wt = 0, tat[30], FCFS_wt = 0, FCFS_tat = 0;
 float awt, avg_tat, avg_wt;
 void main()
 {
     int i;
+    clrscr();
     printf("\nEnter the no.of processes \n");
     scanf("%d", &n);
     printf("Enter burst time for each process\n");
@@ -18,6 +19,7 @@ void main()
     printf("\nAverage Turn around Time :%d ", FCFS_tat / n);
     printf("\nTotal Waiting Time:%d", FCFS_wt);
     printf("\nTotal avg. Waiting Time:%d", FCFS_wt / n);
+    getch();
 }
 int WT_TAT(int *a, int *b)
 {
